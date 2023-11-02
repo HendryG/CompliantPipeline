@@ -101,6 +101,7 @@ Resources:
   rLinuxEc2:
     Type: AWS::EC2::Instance
     Properties:
+      IamInstanceProfile: !Ref rec2InstanceProfile 
       ImageId: !Ref pOperatingSystem
       Monitoring: false
       InstanceType: !Ref pInstanceType
