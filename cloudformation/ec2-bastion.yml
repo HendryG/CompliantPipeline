@@ -106,8 +106,8 @@ Resources:
           - 'EC2_INSTANCE_DETAILED_MONITORING_ENABLED'
 
     Properties:
-      IamInstanceProfile: !Ref rec2InstanceProfile 
       ImageId: !Ref pOperatingSystem
+      IamInstanceProfile: !Ref rec2InstanceProfile 
       Monitoring: false
       InstanceType: !Ref pInstanceType
       EbsOptimized: true
