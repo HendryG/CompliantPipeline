@@ -100,7 +100,7 @@ Resources:
 
   rLinuxEc2:
     Type: AWS::EC2::Instance
-        Metadata:
+    Metadata:
       guard:
         SuppressedRules:
           - 'EC2_INSTANCE_DETAILED_MONITORING_ENABLED'
